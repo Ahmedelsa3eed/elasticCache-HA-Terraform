@@ -52,7 +52,8 @@ resource "aws_elasticache_replication_group" "this" {
   
   maintenance_window          = var.maintenance_window
   snapshot_name               = var.snapshot_name
-  
+  snapshot_retention_limit    = var.snapshot_retention_limit
+
   apply_immediately           = var.apply_immediately
 
   lifecycle {

@@ -24,8 +24,14 @@ variable "port" {
   default     = 6379
 }
 
+variable "engine" {
+  description = "Cache engine to use (redis or valkey)"
+  type        = string
+  default     = "redis"
+}
+
 variable "engine_version" {
-  description = "Redis engine version (e.g. 7.1)"
+  description = "Redis engine version (e.g. 7.2)"
   type        = string
   default     = "7.2"
 }
