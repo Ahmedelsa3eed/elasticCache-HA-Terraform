@@ -69,6 +69,12 @@ variable "maintenance_window" {
   default     = "sun:05:00-sun:06:00"
 }
 
+variable "snapshot_window" {
+  description = "Daily UTC time range for automatic snapshots (e.g. 01:00-02:00)"
+  type        = string
+  default     = "01:00-02:00"
+}
+
 variable "apply_immediately" {
   description = "Apply changes immediately rather than at next maintenance window. Set false for prod"
   type        = bool

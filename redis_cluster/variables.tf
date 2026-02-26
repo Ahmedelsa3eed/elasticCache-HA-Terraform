@@ -65,6 +65,12 @@ variable "maintenance_window" {
   default     = "sun:05:00-sun:06:00"
 }
 
+variable "snapshot_window" {
+  description = "Weekly time range for automatic snapshots (e.g. sun:05:00-sun:06:00)"
+  type        = string
+  default     = "01:00-02:00"
+}
+
 variable "apply_immediately" {
   description = "Whether changes should be applied immediately or during next maintenance window"
   type        = bool

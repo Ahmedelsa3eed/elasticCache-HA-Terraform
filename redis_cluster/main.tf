@@ -50,7 +50,7 @@ resource "aws_elasticache_replication_group" "this" {
   subnet_group_name           = aws_elasticache_subnet_group.redis.id
   security_group_ids          = [aws_security_group.this.id]
   
-  maintenance_window          = var.maintenance_window
+  maintenance_window          = var.snapshot_window
   snapshot_name               = var.snapshot_name
   snapshot_retention_limit    = var.snapshot_retention_limit
 

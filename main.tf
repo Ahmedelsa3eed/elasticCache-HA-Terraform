@@ -38,6 +38,7 @@ module "redis_cluster" {
 
   # Operations
   maintenance_window       = var.maintenance_window
+  snapshot_window          = var.snapshot_window
   apply_immediately        = var.apply_immediately
   snapshot_name            = var.snapshot_name
   snapshot_retention_limit = var.snapshot_retention_limit
